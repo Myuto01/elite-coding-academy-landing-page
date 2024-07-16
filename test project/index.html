@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Coding Academy</title>
+
+     <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     
+    <style>
+        * {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .pricing-container {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        .testimonial-container {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+
+        .header-section {
+            background-image: url("Images/Alt Background.jpg"); 
+            height: 450px;
+        }
+        .header-content{
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            top: 69px;
+            left: 80px;
+            gap: 115px;
+            width: fit-content;
+        }
+
+        .header-content h1 {
+            font-size: 45px;
+        }
+
+        .header-content p {
+            font-size: 22px;
+        }
+
+        .header-content button {
+            display: block;
+            margin: auto;
+            padding: 10px;
+            width: 100px;
+        }
+
+        .pricing-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 150px;
+            margin: 50px;
+        }
+
+        .pricing-content {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .price{
+            font-size: 35px;
+            margin: 5px;
+        }
+        
+        .price-strike{
+            color: red;
+            font-size: 20px;
+            margin: 5px;
+
+        }
+
+        .testimonial-header{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .testimonial-section{
+            height: 630px;
+        }
+
+        .testimonial-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            color: black;
+        }
+
+        .testimonial {
+            border: solid white 2px;
+            width: 300px;
+            height: 300px; /* Increased height to accommodate the name */
+            padding: 20px;
+            text-align: center;
+            background-color: #f9f9f9;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonial-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .name {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .stars {
+            color: #ff9800;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .pricing-img {
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+footer {
+    background-color: #f8f9fa; /* Light background color */
+    color: #6c757d; /* Muted text color */
+    padding-top: 1rem;
+}
+
+/* Section: Social media */
+footer .social-media {
+    border-bottom: 1px solid #dee2e6;
+}
+
+footer .social-media .me-5 {
+    margin-right: 1.5rem;
+}
+
+footer .social-media a {
+    margin-right: 1rem;
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .social-media a:hover {
+    color: #007bff; /* Blue color on hover */
+}
+
+/* Section: Links */
+footer .container {
+    padding-top: 2rem;
+}
+
+footer h6 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+footer p, footer a {
+    margin-bottom: 0.5rem;
+}
+
+footer a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #007bff; /* Blue color on hover */
+}
+
+footer .fa-gem {
+    margin-right: 0.5rem;
+}
+
+footer .fa-home, 
+footer .fa-envelope, 
+footer .fa-phone, 
+footer .fa-print {
+    margin-right: 0.5rem;
+}
+
+/* Copyright */
+footer .copyright {
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+    .header-text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .video-container video {
+        width: 500px;
+        height: 304px;
+    } 
+
+    .pricing-button{
+        position: relative;
+        left: 10px;
+        font-size: 20px;
+    }
+
+
+    @media screen and (max-width: 768px) {
+
+        .header-section {
+            background-image: url(Images/Alt Background.jpg);
+            height: 450px;
+            width: fit-content;
+            object-fit: cover;
+            position: relative;
+            bottom: 10px;
+            right: 6px;
+        }
+
+        .header-content {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            top: 69px;
+            left: 2px; 
+            gap: 115px; 
+            width: fit-content;
+        }
+
+        .video-container video {
+            width: 370px;
+            height: 190px;
+        }
+
+        .pricing-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 150px;
+            margin: 30px;
+        }
+
+        .testimonial-section {
+            height: 95.5rem;
+        }
+
+        .header-text button {
+            position: relative;
+            top: 35px;
+            font-size: 21px;
+        }
+
+        .pricing-section{
+            position: relative;
+            margin-top: 200px;
+        }
+
+        .pricing-content p{
+            font-size: 22px;
+        }
+
+        .pricing-content button {
+            font-size: 22px;
+        }
+
+
+        .pricing-content h3{
+            color: red;
+            text-align: center;
+            font-size: 23px;
+        }
+
+
+    }
+
+    @media screen and (max-width: 1024px) {
+       
+        .header-content {
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            top: 69px;
+            left: 45px;
+            gap: 115px;
+            width: 96%;
+        }
+
+
+        
+        .header-text {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            right: 25px;
+            width: 100%;
+        }
+
+        .header-content h1 {
+            font-size: 46px;
+        }
+
+        .header-text span {
+            font-size: 26px;
+        }
+
+        .header-content button {
+            padding: 20px;
+            width: 227px;
+            font-size: 30px;
+            position: relative;
+            top: 30px;
+        }
+
+
+        .video-container video {
+            width: 500px;
+            height: 304px;  
+            position: relative;
+            right: 25px;
+        }
+
+
+        .pricing-content p{
+            text-align: center;
+            font-size: 55px;
+        }
+
+        .pricing-content button {
+            padding: 20px !important;
+            width: 350px !important;
+            font-size: 32px;
+        }
+
+        .pricing-content h3{
+            font-size: 35px;
+        }   
+
+        .pricing-container {
+            margin: 115px;
+        }
+
+        .testimonial-section {
+            height: 150.5rem;
+        }
+
+        .testimonial-header h4 {
+            text-align: center;
+            font-size: 28px;
+        }
+
+        .testimonial {
+            padding: 70px;
+            height: 805px;
+        }
+
+        .testimonial-img {
+            width: 196px;
+            height: 195px;
+        }
+
+        .name {
+            font-size: 30px;
+        }
+
+        .stars {
+            font-size: 35px;
+        }
+
+        .testimonial p {
+            font-size: 27px;
+            width: 105%;
+            position: relative;
+        }
+        
+        .testimonial-section button{
+            padding: 25px !important;
+            width: 270px  !important;
+            font-size: 30px  !important;
+            
+        }
+
+        footer {
+            font-size: 35px;
+        }
+
+
+    }
+
+    </style>
+
+</head>
+<body>
+
+    <section class="header-section">
+        <div class="header-content">
+            <div class="header-text">
+                <h1 style="text-align: center;"> Elite Coding Academy</h1>
+                <span style="text-align: center;">Become an <strong> ELITE </strong> coder </span>
+                <button style="display: block; margin: auto; background: #1B1039; color: white;">Enroll Now</button>
+            </div>
+
+            <div class="video-container">
+                <video src="Video/Header Video/Developer Coding Background.mp4" class="img-fluid" autoplay muted loop></video>
+            </div>
+
+        </div>
+
+       
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing-section">
+
+        <div class="pricing-content">
+            <h1 style="font-size: 41px; text-align: center;"> Join Us Today! </h1>
+            <p  style="text-align: center;"> Get a 1 Week <strong> Free Trial! </strong> </p>
+            <button style="display: block; margin:auto; color: white; background: #1B1039;padding: 10px; width: 255px;">Get Free Trial!</button>
+            <h3 style="color: red; text-align: center;"> Discount <strong>Valid for last 5 Spots!</strong> </h3>
+        </div>
+
+        <div class="pricing-container">
+
+            <div style="border: solid black 2px; width: 300px; height: 470px; box-shadow: 5px 10px #888888">
+                <img src="Images/Pricing Images/1.png" class="pricing-img" alt="HTML and CSS.png" width="300px" height="200px">  
+
+                <h2> HTML5 and CSS Course </h2>  <small><strong>Including basic JavaScript</strong></small>
+                <h4 class="price-strike"><strike>$150</strike> </h4>
+                <h1 class="price">$79.99</h1>
+
+                <button class="pricing-button" style="background: #1B1039; color: white; padding: 10px; width: 150px; ">Enroll</button>
+            </div>
+
+            <div style="border: solid black 2px; width: 300px; height: 470px;  box-shadow: 5px 10px #888888;            ">
+                <img src="Images/Pricing Images/2.png" class="pricing-img" alt="JavaScript.png" width="300px" height="200px">
+
+                <h2> JavaScript Course </h2>
+                <h4 class="price-strike"><strike>$150</strike> </h4>
+                <h1 class="price">$79.99</h1>
+
+                <button class="pricing-button"  style="background: #1B1039; color: white; padding: 10px; width: 150px;">Enroll</button>
+            </div>
+            
+            <div style="border: solid black 2px; width: 300px; height: 470px; box-shadow: 5px 10px #888888">
+                <img src="Images/Pricing Images/Python.png" class="pricing-img" alt="Python.png" width="300px" height="200px">
+
+                <h2> Python Course </h2>
+                <h4 class="price-strike"><strike>$150</strike> </h4>
+                <h1 class="price">$79.99</h1>
+
+                <button class="pricing-button"  style="background: #1B1039; color: white; padding: 10px; width: 150px; ">Enroll</button>
+            </div>
+
+            <div style="border: solid black 2px; width: 300px; height: 470px; background: #1B1039; box-shadow: 5px 10px #888888">
+                <img src="Images/Pricing Images/All.png" class="pricing-img" alt="All.png" width="300px" height="200px">
+
+                <h2 style="color: white;">All Courses Combined</h2>
+                <h4 class="price-strike"><strike>$600</strike></h4>
+                <h1 class="price" style="color: white;">$200</h1>
+
+                <button class="pricing-button"  style="padding: 10px; width: 150px;">Enroll</button>
+            </div>
+
+
+        </div>
+
+        <h1 style="text-align: center;">HURRY!</h1>  
+
+    </section>
+
+    <section class="testimonial-section" style="background: #1B1039; color: white;">
+
+        <div class="testimonial-header">
+            <h1 style="text-align: center; font-size: 40px;" > From Beginner to Expert in Just a Month!</h1>
+            <h4 style="text-align: center;">Dont Believe Us?, Just listen to our previous students</h4>
+        </div>
+
+
+        <div class="testimonial-container">
+        <!--Testimonial 1-->
+        <div class="testimonial">
+            <img src="Images/Testimonial Images/Marlian.jpg" alt="Testimonial Image 1" class="testimonial-img">
+            <div class="name"> The Marlian</div>
+            <div class="stars">
+                ★★★★☆
+            </div>
+            <p>Elite Coding Academy transformed my career! Within months, I went from a complete novice to landing a full-stack developer position at a leading tech firm. The hands-on projects and expert mentorship made all the difference.</p>
+        </div>
+
+        <!--Testimonial 2-->
+        <div class="testimonial">
+            <img src="Images/Testimonial Images/Muchi 1.jpg" alt="Testimonial Image 2" class="testimonial-img">
+            <div class="name">Muchinga Mwango</div>
+            <div class="stars">
+                ★★★★☆
+            </div>
+            <p>I can't thank Elite Coding Academy enough! The curriculum is top-notch and the support is unparalleled. After completing the course, I secured a role as a front-end developer at a dynamic startup. My coding skills have skyrocketed!</p>
+        </div>
+
+        <!--Testimonial 3-->
+        <div class="testimonial">
+            <img src="Images/Testimonial Images/Guy.jpg" alt="Testimonial Image 3" class="testimonial-img">
+            <div class="name">Huynh Khanh</div>
+            <div class="stars">
+                ★★★★★
+            </div>
+            <p>Joining Elite Coding Academy was the best decision I ever made. The intensive training and real-world applications equipped me with the skills to excel. I'm now a software engineer at a major corporation, and it's all thanks to the academy's exceptional program.</p>
+        </div>
+    </div>
+        
+        <br>
+        <button style="padding: 10px; width: 150px; font-size: 15px; display: block; margin: auto;"> Enroll Now </button> 
+    </section>
+
+
+    <section>
+
+        <!-- Footer -->
+    <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 social-media">
+          <!-- Left -->
+          <div class="me-5 d-none d-lg-block">
+            <span>Get connected with us on social networks:</span>
+          </div>
+          <!-- Left -->
+      
+          <!-- Right -->
+          <div>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-google"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+      
+        <!-- Section: Links  -->
+        <section class="">
+          <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  <i class="fas fa-gem me-3"></i>Elite Coding Academy
+                </h6>
+                <p>
+                  Here you can use rows and columns to organize your footer content. Lorem ipsum
+                  dolor sit amet, consectetur adipisicing elit.
+                </p>
+              </div>
+              <!-- Grid column -->
+      
+      
+      
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                 <!--<p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>-->
+                <p>
+                  <i class="fas fa-envelope me-3"></i>
+                  info@example.com
+                </p>
+                <!--<p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>-->
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-4 copyright">
+          © 2024 Copyright:
+          <a class="text-reset fw-bold" href="#">Elite Coding Academy</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+  <!-- Footer -->
+  
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</section>
+</body>
+</html>
